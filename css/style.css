@@ -1,0 +1,72 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body {
+    font-family: sans-serif;
+    user-select: none;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.opt {
+    padding: 7px;
+    border: 1px solid blue;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.checkbox:checked + .pingpong {
+    background-image: url(../img/table-tennis.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.checkbox:checked + .basketball {
+    background-image: url(../img/basketball-ball.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.checkbox:checked + .valleyball {
+    background-image: url(../img/volleyball-ball.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.checkbox:checked + .hockey {
+    background-image: url(../img/hockey-puck.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.checkbox:focus .opt {
+    box-shadow: 1px 1px 4px 2px #0E85F3;
+}
